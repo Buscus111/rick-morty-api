@@ -1,6 +1,7 @@
-import logo from '../../logo.svg';
+import './Header.css'
+import logo from '../../img/portal.png'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const NavLink = styled(Link)`
   margin: 1vh;
@@ -14,11 +15,18 @@ const NavLink = styled(Link)`
 function Header() {
   return (
       <header className="App-header">
+      <div className="logo-wrapper">
         <img src={logo} className="App-logo" alt="logo" />
+      </div>
+      <div className="name-wrapper">
+        <h1>Rick and Morty Universe</h1>
+      </div>
+      <div className="navbar-wrapper">
         <nav className="App-nav">
-          <NavLink data-path='/home' to="/home">Home</NavLink>
-          <NavLink data-path='/info' to="/info">Info</NavLink>
+          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/info">Info</NavLink>
         </nav>
+      </div>
       </header>
   )
 }

@@ -1,7 +1,8 @@
 .App {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: #282c34;
+  color: white;
 }
 
 .App-header {
@@ -13,14 +14,22 @@
 
 }
 
+.App-main{
+  max-height: 90vh;
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 .App-logo {
-  height: 10vmin;
+  max-height: 9vh;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 25s linear;
   }
 }
 
